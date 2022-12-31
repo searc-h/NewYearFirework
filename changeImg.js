@@ -42,7 +42,7 @@ function getAnimate(){
         }
     }
 
-    if(timeAnimate >= 500){
+    if(timeAnimate >= 5000){
         changeImg()
         if(index >= length)
         {
