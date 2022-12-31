@@ -2,24 +2,46 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>烟花秀</title>
+		<title>新年快乐~我的小陈宝贝</title>
 		<link rel="stylesheet" href="firework.css">
+		<link rel="stylesheet" href="imgBox.css">
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="wrapper-display">
-				<p id="time">距离2022还有: 10时50分30秒</p>
+				<p id="time">距离2023还有: 10时50分30秒</p>
 			</div>
 			<span></span>
 			<span></span>
 		</div>
 	
+		<div class="imgBox">
+			
+		</div>
+		<div class="text">
+			若回到起点<br>
+			命中注定<br>
+			我也是属于你的@小陈 <br>
+		</div>
+
 		<canvas id="canvas"></canvas>
+		
+		<audio src="./music/little_love_sound.mp3" autoplay="autoplay" loop="loop"></audio>
 	</body>
 </html>
+<script src="./fullS.js"></script>
 <script src="firework2.js"></script>
+<script src="./changeImg.js"></script>
 <script>
 	
+	// window.onload=()=>{
+	// 	const a = document.createElement('a');
+	// 	a.setAttribute('referrerpolicy', 'no-referrer');
+	// 	a.setAttribute('href', 'http://43.139.112.16:8010/music/little_love_sound.mp3');
+	// 	a.setAttribute('target' ,'_blank')
+	// 	a.click();
+	// }
+
 	let time = document.getElementById('time')
 	
 	
@@ -37,7 +59,6 @@
 		minutes = Math.floor(totsec / 60 % 60)
 		seconds = Math.floor(totsec % 60)
 		
-		console.log(hours,minutes,seconds)
 		
 		return `${hours}时${minutes}分${seconds}秒`
 	}
@@ -51,10 +72,10 @@
 		let targ = 20220100
 		// console.log(curr)
 		if(curr < targ){
-			time.innerText = '虎年快乐！'
+			time.innerText = '2023年新年快乐！小陈'
 		}else{
-			time.innerText = '距离2022虎年还有:' + getTimeTo2022()
+			time.innerText = '距离2023年还有:' + getTimeTo2022()
 		}
-		time.innerText = '距离2022虎年还有:' + getTimeTo2022()
+		time.innerText = '距离2023年还有:' + getTimeTo2022()
 	}
 </script>

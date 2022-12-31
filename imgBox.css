@@ -1,0 +1,34 @@
+.imgBox{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    background-image: url('./images/22.jpg'); 
+    /* 需要更换 */
+
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* 动画效果 */
+    /* transform: scale(1.5); */
+    /* opacity: 0.5; */
+
+}
+.text{
+    position: absolute;
+    color: rgb(247, 239, 239);
+    font-size: 3rem;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+    top: 25%;
+}
