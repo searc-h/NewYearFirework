@@ -42,10 +42,13 @@ function getAnimate(){
         }
     }
 
-    if(timeAnimate >= 50){
+    if(timeAnimate >= 500){
         changeImg()
         if(index >= length)
+        {
+            opacity = 0.5
             return
+        }
         timeAnimate = 0
         scale = 1
         opacity = 0.4
